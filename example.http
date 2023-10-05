@@ -1,0 +1,18 @@
+### Start job
+POST http://localhost:3000/async HTTP/1.1
+content-type: application/json
+
+{
+    "inputFileUrl": "https://storage.com/moonlanding.mp3",
+    "outputFileUrl": "https://storage.com/moonlanding.mp3",
+    "webhookUrl": "https://webhook.site/858828ce-888c-4710-bf1e-09e2db0e0ec4"
+}
+
+### Live test
+POST http://localhost:3000/ HTTP/1.1
+content-type: application/json
+
+{
+    "inputFileUrl": "https://storage.com/moonlanding.mp3",
+    "outputFileUrl": "https://storage.com/moonlanding.mp3",
+}

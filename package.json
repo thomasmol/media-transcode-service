@@ -1,0 +1,19 @@
+{
+  "name": "media-transcode-service",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build --define process.env.FLUENTFFMPEG_COV=0 --target=bun ./src/index.ts --outdir ./build ",
+    "start": "bun run ./build/index.js"
+  },
+  "dependencies": {
+    "elysia": "latest",
+    "@types/fluent-ffmpeg": "^2.1.22",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
