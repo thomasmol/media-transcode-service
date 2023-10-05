@@ -1,4 +1,4 @@
-# Recording Convert Service
+# Media Transcode Service
 
 This is a AWS MediaConvert alternative for converting audio and videos files to mp3.
 
